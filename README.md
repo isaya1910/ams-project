@@ -7,11 +7,14 @@ Lesson:
 Course:
   provideFutureLessons(): List<Lesson>
   providePreviousLessons(): List<Lesson>
-  provideSkippedLesson(): Lesson
+  provideSkippedLessons(): Lesson
+  skipLesson(lesson: Lesson)
+  rescheduleLesson(lesson: Lesson): Lesson
+  
   
   
 Student:
-  requestLessonSkip(lesson: Lesson)
+  requestLessonSkip(course: Course, )
   requestLessonReschedule()
   requestCoursePause()
   provideBonus(): Bonus
@@ -21,8 +24,8 @@ Teacher:
   giveBonus(student: Student)
 
 Admin: 
-  acceptLessonSkip(lesson: Lesson)
-  declineLessonSkip(lesson: Lesson)
-  acceptCoursePause(course: Course)
-  declineCoursePause(course: Course)
-  rescheduleLesson(lesson: Lesson)
+  acceptLessonSkip()
+  declineLessonSkip()
+  acceptCoursePause()
+  declineCoursePause()
+  rescheduleLesson()
