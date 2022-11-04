@@ -14,8 +14,8 @@ Course:
   
   
 Student:
-  requestLessonSkip(course: Course, )
-  requestLessonReschedule()
+  requestLessonSkip(lesson: Lesson)
+  requestLessonReschedule(lesson: Lesson): Lesson
   requestCoursePause()
   provideBonus(): Bonus
   
