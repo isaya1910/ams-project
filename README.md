@@ -13,6 +13,7 @@ Course:
   
   
 Student:
+  lessonsBalance()
   requestLessonSkip(lesson: Lesson)
   requestLessonReschedule(lesson: Lesson): Lesson
   requestCoursePause()
