@@ -3,6 +3,7 @@
 
 Lesson: 
   provideStartTime(): DateTime
+  duration(): Duration
   
 Course:
   futureLessons(): List<Lesson>
