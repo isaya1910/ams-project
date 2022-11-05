@@ -5,23 +5,24 @@ Lesson:
   provideStartTime(): DateTime
   
 Course:
-  provideFutureLessons(): List<Lesson>
-  provideParticipatedLessons(): List<Lesson>
-  provideSkippedLessons(): List<Lesson>
-  
+  futureLessons(): List<Lesson>
+  endedLessons(): List<Lesson>
+  skipeedLessons(): List<Lesson>
+  nextLesson(): Lesson
   
   
 Student:
   requestLessonSkip(lesson: Lesson)
   requestLessonReschedule(lesson: Lesson): Lesson
   requestCoursePause()
-  provideBonus(): Bonus
+  bonus(): Bonus
   
 Teacher: 
   markAttendence(student: Student)
   giveBonus(student: Student)
 
 Admin: 
+  createCourseForStudent()
   acceptLessonSkip()
   declineLessonSkip()
   acceptCoursePause()
