@@ -4,11 +4,11 @@
 Lesson: 
   provideStartTime(): DateTime
   duration(): Duration
+  matherial(): Matherial
   
 Course:
   futureLessons(): List<Lesson>
   endedLessons(): List<Lesson>
-  skipeedLessons(): List<Lesson>
   nextLesson(): Lesson
   
   
@@ -23,7 +23,7 @@ Teacher:
   giveBonus(student: Student)
 
 Admin: 
-  createCourseForStudent()
+  createCourse()
   acceptLessonSkip()
   declineLessonSkip()
   acceptCoursePause()
