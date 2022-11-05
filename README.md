@@ -6,10 +6,8 @@ Lesson:
   
 Course:
   provideFutureLessons(): List<Lesson>
-  providePreviousLessons(): List<Lesson>
-  provideSkippedLessons(): Lesson
-  skipLesson(lesson: Lesson)
-  rescheduleLesson(lesson: Lesson): Lesson
+  provideParticipatedLessons(): List<Lesson>
+  provideSkippedLessons(): List<Lesson>
   
   
   
