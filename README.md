@@ -28,7 +28,7 @@ Lesson Attendance:
 // может отпроситься с урока, поставить абонемент на паузу
 Student:
   requestLessonSkip(lesson: Lesson)
-  requestAbonementPause()
+  requestAbonnementPause()
   
 // на начальном этапе может проставлять аттенданс и ставить бонусы  
 Teacher: 
@@ -37,8 +37,9 @@ Teacher:
 
 Admin: 
   createCourse()
+  createAbonement(user): Abonement
   acceptLessonSkip()
   declineLessonSkip()
-  acceptCoursePause()
-  declineCoursePause()
+  acceptAbonnementPause()
+  declineAbonnementPause()
   rescheduleLesson()
